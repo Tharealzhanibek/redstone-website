@@ -11,24 +11,16 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: #0E0E0E;
 }
 .bgc-bl {
-    background-color: #1C1C1C;
+    background-color: #0E0E0E;
 }
 .text-w {
     color: #F5F5F5;
 }
 
-div {
-    font-family: minecraft;
-    color: #F5F5F5;
+.color-r {
+    color: #e57361;
 }
 
-p {
-    display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center; /* Vertically center */
-    height: 100vh; /* Full viewport height */
-    width: 100%; /* Full width */
-    color: #d33b2b;
-}
