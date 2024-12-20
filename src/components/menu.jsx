@@ -4,43 +4,49 @@ import Logo from './Logo.png';
 import '/src/App.css';
 
 const Menu = () => {
-    const [showNavbar, setShowNavbar] = useState(true); // State to toggle navbar visibility
-    const [lastScrollY, setLastScrollY] = useState(0); // Track the last scroll position
+    const [isNavbarVisible, setIsNavbarVisible] = useState(false); // State to toggle navbar visibility
+    const [isMobile, setIsMobile] = useState(false); // Detect if the screen is mobile
 
+    // Detect screen size on mount and resize
     useEffect(() => {
-        const handleScroll = () => {
-            const currentScrollY = window.scrollY;
-
-            // If scrolling down, hide navbar; if scrolling up, show navbar
-            if (currentScrollY > lastScrollY) {
-                setShowNavbar(false);
-            } else {
-                setShowNavbar(true);
-            }
-
-            setLastScrollY(currentScrollY); // Update the last scroll position
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768); // Assume mobile if width < 768px
         };
+        handleResize(); // Run on mount
+        window.addEventListener('resize', handleResize);
 
-        // Add scroll listener
-        window.addEventListener('scroll', handleScroll);
-
-        // Cleanup listener on component unmount
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, [lastScrollY]); // Effect depends on `lastScrollY`
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     return (
         <header
-            className={`flex items-center justify-between bgc-bl px-6 py-4 shadow-md sticky top-0 z-50 transition-transform duration-300 ${
-                showNavbar ? 'translate-y-0' : '-translate-y-full'
-            }`}
+            className={`flex items-center justify-between bgc-bl px-6 py-4 shadow-md sticky top-0 z-50`}
         >
+            {/* Logo Section */}
             <div className="flex items-center">
                 <img src={Logo} alt="Logo" className="h-10 cursor-pointer" />
             </div>
 
-            <nav className="flex space-x-6 text-[#F5F5F5] font-minecraft">
+            {/* Toggle Button for Mobile */}
+            {isMobile && (
+                <button
+                    onClick={() => setIsNavbarVisible(!isNavbarVisible)}
+                    className="text-[#F5F5F5] font-minecraft sm:hidden"
+                >
+                    {isNavbarVisible ? 'Close' : 'Menu'}
+                </button>
+            )}
+
+            {/* Navbar Links */}
+            <nav
+                className={`flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 text-[#F5F5F5] font-minecraft ${
+                    isMobile
+                        ? isNavbarVisible
+                            ? 'flex'
+                            : 'hidden'
+                        : 'flex'
+                }`}
+            >
                 <Link to="/Home" className="hover:text-[#e57361] cursor-pointer">
                     Home
                 </Link>
