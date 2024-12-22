@@ -45,12 +45,10 @@ export const Team = () => {
             <div className="w-screen font-minecraft">
                 <div className="px-4 md:px-[45px] py-8 md:py-[70px]">
                     <p className="text-w text-[24px] md:text-[30px]">
-                        We are team 11212, <span className="color-r">The Clueless!</span>
+                        We are team 24749, <span className="color-r">RedStone</span>!
                     </p>
                     <p className="text-w text-base md:text-2xl mt-4">
-                        We're a community team with members from 5 high schools across San Diego based out of a garage
-                        in Rancho Peñasquitos. We've been competing in FIRST Robotics for 8 years, beginning FLL in
-                        2016. We currently have 15 members and are excited to be a part of the FIRST community!
+                        We're a community team with members from <span className='color-r'>5 public schools</span> across Almaty based out of a laboratory in 81 school. We've been competing in FIRST Robotics for <span className='color-r'>2 years</span>. We currently have <span className='color-r'>11 members</span> and are excited to be a part of the FIRST community!
                     </p>
                 </div>
             </div>
@@ -99,8 +97,8 @@ export const Team = () => {
                 </div>
                 <div className="w-full sm:w-[48%] lg:w-[32%]">
                     <Member
-                        photo={rightPhoto}
-                        name="Alice Smith"
+                        photo={zhanibek}
+                        name="Nazima"
                         role="Project Manager"
                         school="Leadership Academy"
                     />
@@ -108,7 +106,7 @@ export const Team = () => {
                 <div className="w-full sm:w-[48%] lg:w-[32%]">
                     <Member
                         photo={rightPhoto}
-                        name="Alice Smith"
+                        name="Nazima"
                         role="Mechanical Member"
                         school="Leadership Academy"
                     />
@@ -116,7 +114,7 @@ export const Team = () => {
                 <div className="w-full sm:w-[48%] lg:w-[32%]">
                     <Member
                         photo={rightPhoto}
-                        name="Alice Smith"
+                        name="Nazima"
                         role="Inspire Member"
                         school="Leadership Academy"
                     />
@@ -124,7 +122,7 @@ export const Team = () => {
                 <div className="w-full sm:w-[48%] lg:w-[32%]">
                     <Member
                         photo={rightPhoto}
-                        name="Alice Smith"
+                        name="Nazima"
                         role="Team Captain"
                         school="Leadership Academy"
                     />
