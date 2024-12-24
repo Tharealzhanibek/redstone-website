@@ -3,7 +3,7 @@ import '/src/App.css';
 export const Awards = () => {
     return (
         <div>
-            <div className='text-w font-minecraft text-[28px] sm:text-[4ç0px] flex justify-center items-center py-[20px] sm:py-[60px]'>
+            <div className='text-w font-minecraft text-[28px] sm:text-[40px] flex justify-center items-center py-[20px] sm:py-[40px]'>
                 <div className='color-r'>AWARDS  AND ACHIEVEMENTS</div>
             </div>
             <div className=''>
