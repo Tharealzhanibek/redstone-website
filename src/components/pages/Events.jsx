@@ -13,7 +13,7 @@ export const Events = () => {
                 
                 {/* Event 1 */}
                 <div className='border-t-4 border-[#e57361] pt-4 sm:pt-6'>
-                    <div className='color-r font-minecraft text-w text-[24px] sm:text-[28px] w-full text-center mb-4'>
+                    <div className='font-minecraft text-w text-[24px] sm:text-[28px] w-full text-center mb-4'>
                         STEM x Education Event for Prospective International University Students
                     </div>
                     <div className='font-minecraft text-w leading-relaxed text-[16px] sm:text-[20px]'>
@@ -23,7 +23,7 @@ export const Events = () => {
 
                 {/* Event 2 */}
                 <div className='border-t-4 border-[#e57361] pt-4 sm:pt-6'>
-                    <div className='color-r font-minecraft text-w text-[24px] sm:text-[28px] w-full text-center mb-4'>
+                    <div className='font-minecraft text-w text-[24px] sm:text-[28px] w-full text-center mb-4'>
                         Game Analysis Video Translation in Collaboration with the World’s Best FTC Teams
                     </div>
                     <div className='font-minecraft text-w leading-relaxed text-[16px] sm:text-[20px]'>
@@ -34,7 +34,7 @@ export const Events = () => {
 
                 {/* Event 3 */}
                 <div className='border-t-4 border-[#e57361] pt-4 sm:pt-6'>
-                    <div className='color-r font-minecraft text-w text-[24px] sm:text-[28px] w-full text-center mb-4'>
+                    <div className='font-minecraft text-w text-[24px] sm:text-[28px] w-full text-center mb-4'>
                         Regular Visits to Orphanages and Camps
                     </div>
                     <div className='font-minecraft text-w leading-relaxed text-[16px] sm:text-[20px]'>
@@ -44,7 +44,7 @@ export const Events = () => {
 
                 {/* Event 4 */}
                 <div className='border-t-4 border-[#e57361] pt-4 sm:pt-6'>
-                    <div className='color-r font-minecraft text-w text-[24px] sm:text-[28px] w-full text-center mb-4'>
+                    <div className='font-minecraft text-w text-[24px] sm:text-[28px] w-full text-center mb-4'>
                         Robotics Zone at the Geek Festival by Flavi
                     </div>
                     <div className='font-minecraft text-w leading-relaxed text-[16px] sm:text-[20px]'>
@@ -54,7 +54,7 @@ export const Events = () => {
 
                 {/* Event 5 */}
                 <div className='border-t-4 border-[#e57361] pt-4 sm:pt-6'>
-                    <div className='color-r font-minecraft text-w text-[24px] sm:text-[28px] w-full text-center mb-4'>
+                    <div className='font-minecraft text-w text-[24px] sm:text-[28px] w-full text-center mb-4'>
                         Team Presentation at Maker Fair
                     </div>
                     <div className='font-minecraft text-w leading-relaxed text-[16px] sm:text-[20px]'>
