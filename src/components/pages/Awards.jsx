@@ -4,7 +4,7 @@ export const Awards = () => {
     return (
         <div>
             <div className='text-w font-minecraft text-[40px] sm:text-[60px] flex justify-center items-center py-[20px] sm:py-[60px]'>
-                <div className='color-r'>AWARDS AND ACHIEVEMENTS</div>
+                <div className='color-r'>AWARDS  AND ACHIEVEMENTS</div>
             </div>
             <div className=''>
                 {/* Award 1 */}
