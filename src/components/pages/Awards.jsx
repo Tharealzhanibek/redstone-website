@@ -1,53 +1,59 @@
 import '/src/App.css';
 
-export const Awards = () => {
+const Award = ({ title, year, details }) => {
     return (
-        <div>
-            <div className='text-w font-minecraft text-[28px] sm:text-[40px] flex justify-center items-center py-[20px] sm:py-[40px]'>
-                <div className='color-r'>AWARDS  AND ACHIEVEMENTS</div>
+        <div className="flex flex-col sm:flex-row w-full bg-[#1a1a1a] p-6 rounded-[20px] border-t-4 border-[#e57361] overflow-hidden">
+            {/* Title and Year */}
+            <div className="flex w-full sm:w-[40%] justify-center items-center text-center mb-4 sm:mb-0">
+                <div className="space-y-2 font-minecraftt color-r text-[24px] sm:text-[32px]">
+                    <span className="block">{title}</span>
+                    <span className="block">{year}</span>
+                </div>
             </div>
-            <div className=''>
-                {/* Award 1 */}
-                <div className='flex flex-col sm:flex-row font-minecraft text-w space-x-2 sm:space-x-4 border-[#e57361] border-t-4 pt-[20px] sm:pt-[40px] pb-[20px]'>
-                    <div className='flex w-full sm:w-[40%] justify-center items-center text-center'>
-                        <div className='space-y-1 text-[24px] sm:text-[30px]'>
-                            <span className='block'>INTO THE DEEP</span>
-                            <span className='block'>2024-2025</span>
-                        </div>
-                    </div>  
-                    <div className="text-[18px] sm:text-[20px] pl-0 sm:pl-[27px]">
-                        <div>Inspire Award 2nd place  -  Almaty Regional Championship</div>
-                        <div>Think Award 1st place  -  Almaty Regional Championship</div>
-                    </div>
-                </div>
-
-                {/* Award 2 */}
-                <div className='flex flex-col sm:flex-row font-minecraft text-w space-x-2 sm:space-x-4 border-[#e57361] border-t-4 pt-[20px] sm:pt-[40px] pb-[20px]'>
-                    <div className='flex w-full sm:w-[40%] justify-center items-center text-center'>
-                        <div className='space-y-1 text-[24px] sm:text-[30px]'>
-                            <span className='block'>FIRST Global Challenge</span>
-                            <span className='block'>2024</span>
-                        </div>
-                    </div>  
-                    <div className="text-[18px] sm:text-[20px] pl-0 sm:pl-[27px]">
-                        <div>Engineering Documentation Award 1st place - Almaty Regional Championship</div>
-                    </div>
-                </div>
-
-                {/* Award 3 */}
-                <div className='flex flex-col sm:flex-row font-minecraft text-w space-x-2 sm:space-x-4 border-[#e57361] border-t-4 border-b-4 pt-[20px] sm:pt-[40px] pb-[20px]'>
-                    <div className='flex w-full sm:w-[40%] justify-center items-center text-center'>
-                        <div className='space-y-1 text-[24px] sm:text-[30px]'>
-                            <span className='block'>CENTERSTAGE</span>
-                            <span className='block'>2023-2024</span>
-                        </div>
-                    </div>  
-                    <div className="text-[18px] sm:text-[20px] pl-0 sm:pl-[27px]">
-                        <div>Motivate Award 3rd place  -  Central Asian Championship</div>
-                        <div>Winning Alliance Captain  -  Almaty Regional Championship</div>
-                    </div>
-                </div>
+            {/* Award Details */}
+            <div className="font-minecraftt text-w text-[20px] sm:text-[24px] leading-relaxed sm:pl-[20px]">
+                {details.map((detail, index) => (
+                    <div key={index}>{detail}</div>
+                ))}
             </div>
         </div>
     );
-}
+};
+
+export const Awards = () => {
+    return (
+        <div>
+            {/* Title Section */}
+            <div className="text-w font-minecraftt text-[28px] sm:text-[40px] flex justify-center items-center py-[20px] sm:py-[40px]">
+                <div className="color-r">AWARDS AND ACHIEVEMENTS</div>
+            </div>
+
+            {/* Awards Container */}
+            <div className="grid grid-cols-1 gap-8 px-4 sm:px-8 pb-[20px]">
+                <Award
+                    title="INTO THE DEEP"
+                    year="2024-2025"
+                    details={[
+                        "Inspire Award 2nd place - Almaty Regional Championship",
+                        "Think Award 1st place - Almaty Regional Championship",
+                    ]}
+                />
+                <Award
+                    title="FIRST Global Challenge"
+                    year="2024"
+                    details={[
+                        "Engineering Documentation Award 1st place - Almaty Regional Championship",
+                    ]}
+                />
+                <Award
+                    title="CENTERSTAGE"
+                    year="2023-2024"
+                    details={[
+                        "Motivate Award 3rd place - Central Asian Championship",
+                        "Winning Alliance Captain - Almaty Regional Championship",
+                    ]}
+                />
+            </div>
+        </div>
+    );
+};

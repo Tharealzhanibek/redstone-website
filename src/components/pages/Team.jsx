@@ -28,9 +28,9 @@ const Member = ({ photo, name, role, school }) => {
 
             {/* Text Section */}
             <div className="flex flex-col justify-center w-full md:w-[70%] pl-0 md:pl-4 space-y-2 mt-4 md:mt-0">
-                <div className="color-r text-[20px] md:text-[26px] font-minecraft">{name}</div>
-                <div className="text-w font-minecraft text-[16px] md:text-[20px]">{school}</div>
-                <div className={`text-w font-minecraft text-[16px] md:text-[20px] p-2 md:p-4 rounded ${bgClass} flex justify-center items-center`}>
+                <div className="color-r text-[24px] sm:text-[32px] font-minecraftt">{name}</div>
+                <div className="text-w font-minecraftt text-[20px] sm:text-[24px]">{school}</div>
+                <div className={`text-w font-minecraftt text-[20px] sm:text-[24px] p-2 md:p-4 rounded ${bgClass} flex justify-center items-center`}>
                     {role}
                 </div>
             </div>
@@ -42,12 +42,12 @@ export const Team = () => {
     return (
         <>
             {/* Header Section */}
-            <div className="w-screen font-minecraft">
-                <div className="px-4 md:px-[45px] py-8 md:py-[70px]">
-                    <p className="text-w text-[24px] md:text-[30px]">
+            <div className="w-screen font-minecraftt">
+                <div className="px-4 md:px-[45px] py-10 md:py-[70px]">
+                    <p className="text-w text-[28px] md:text-[36px]">
                         We are team 24749, <span className="color-r">RedStone</span>!
                     </p>
-                    <p className="text-w text-base md:text-2xl mt-4">
+                    <p className="text-w text-lg md:text-2xl mt-6">
                         We're a community team with members from <span className='color-r'>5 public schools</span> across Almaty based out of a laboratory in 81 school. We've been competing in FIRST Robotics for <span className='color-r'>2 years</span>. We currently have <span className='color-r'>11 members</span> and are excited to be a part of the FIRST community!
                     </p>
                 </div>
@@ -67,7 +67,7 @@ export const Team = () => {
                     <Member
                         photo={nazima}
                         name="Nazima"
-                        role="Software member"
+                        role="Software Member"
                         school="Gymnasium No.21"
                     />
                 </div>
