@@ -5,6 +5,10 @@ import amspace from '/src/assets/amspace.png';
 import eightyone from '/src/assets/eightyone.png';
 import chevron from '/src/assets/chevron.png';
 import pickaxe from '/src/assets/pick.png';
+import inspireTeam from '/src/assets/inspire-team.jpg';
+import teamwork from '/src/assets/teamwork.jpg'
+import zhylandy from '/src/assets/zhylandy.jpg'
+import forum from '/src/assets/forum.png'
 
 export const Home = () => {
     return (
@@ -27,14 +31,21 @@ export const Home = () => {
                                 </span>
                             </div>
                         </div>
-                        <div className='w-full sm:w-[40%] mt-8 sm:mt-0'><img src={rightPhoto} className='rounded-[20px] sm:rounded-[70px] h-auto sm:h-[300px] w-full' alt="Right" /></div>
+                        <div className='w-full sm:w-[40%] mt-8 sm:mt-0'><img src={teamwork} className='rounded-[20px] sm:rounded-[70px] h-auto sm:h-[300px] w-full object-cover' alt="Right" /></div>
                     </div>
                 </div>
             </div>
 
             <div className='w-screen h-auto sm:h-500px bgc-bl text-w border-b-4 border-[#e57361] pt-12 pb-6 px-8 sm:px-16'>
                 <div className="flex flex-col sm:flex-row justify-between items-center">
-                    <div className='w-full sm:w-[40%]'><img src={rightPhoto} className='rounded-[20px] sm:rounded-[70px] h-auto sm:h-[300px] w-full' alt="Right" /></div>
+                <div className="w-full sm:w-[40%] h-[300px] sm:overflow-hidden">
+    <img 
+        src={inspireTeam} 
+        className="rounded-[20px] sm:rounded-[70px] h-auto sm:h-full w-full object-cover" 
+        alt="Right" 
+    />
+</div>
+
                     <div className='w-full sm:w-[55%] mt-8 sm:mt-0'>
                         <h1 className='font-minecraftt text-4xl sm:text-5xl mt-4 mb-10 color-r'>Our Mission:</h1>
                         <div className="space-y-6">
@@ -91,33 +102,61 @@ export const Home = () => {
             </div>
 
             <div className='mx-6 sm:mx-[80px] border-gray-800 border-b-2'>
-                
-                <hr className='border-gray-800 border-t-2'/>
-                
-                <div className="flex flex-col sm:flex-row gap-6 my-[24px]">
-                    <img src={rightPhoto} className="w-full sm:w-[40%]" alt="Photo" />
-                    <div className="flex flex-col my-[20px] space-y-4">
-                        <h1 className='color-r text-3xl sm:text-5xl font-minecraftt'>{'Zhylandy FIRST Championship'}</h1>
-                        <h2 className='text-w font-minecraftt text-2xl sm:text-3xl'>{'November 30, 2024'}</h2>
-                        <div className='text-w font-minecraftt text-base sm:text-lg space-y-6'>
-                            <span className='block'>Our team participated in the regional Zhylandy FIRST Championship and successfully presented outstanding social projects, contributions to robotics, and the values of FIRST®️.</span>
-                            <span className='block'>Thanks to our hard work and dedication, we were honored to win one of the top awards—Inspire Award 2nd Place. We are thrilled that our team is reaching new heights!</span>
-                        </div>
-                    </div>
-                </div>
-                <hr className='border-gray-800 border-t-2'/>
-                <div className="flex flex-col sm:flex-row gap-6 my-[24px]">
-                    <img src={rightPhoto} className="w-full sm:w-[40%]" alt="Photo" />
-                    <div className="flex flex-col my-[20px] space-y-4">
-                        <h1 className='color-r text-3xl sm:text-5xl font-minecraftt'>{'International Forum for FTC Students'}</h1>
-                        <h2 className='text-w font-minecraftt text-2xl sm:text-3xl'>{'January 3-4, 2025'}</h2>
-                        <div className='text-w font-minecraftt text-base sm:text-lg space-y-6'>
-                            <span className='block'>Team RedStone is proud to announce the organization of the International Forum for FTC Students. This forum aims to unite students (both rookies and experienced), mentors, and professionals from around the globe to share invaluable insights, enhance their knowledge, and promote collaboration within the FTC community.</span>
-                            <span className='block'>We are honored to share that some of the world’s best teams and judges have graciously accepted our invitation to participate in this online forum. We are confident this event will be an incredible opportunity for growth and innovation within our community!</span>
-                        </div>
-                    </div>
-                </div>
+    <hr className='border-gray-800 border-t-2' />
+
+    <div className="flex flex-col sm:flex-row gap-6 my-[24px]">
+        {/* Image Container */}
+        <div className="sm:w-[40%] h-[350px] flex-shrink-0">
+            <img 
+                src={zhylandy} 
+                className="w-full h-full object-cover" 
+                alt="Photo" 
+            />
+        </div>
+        
+        {/* Text Container */}
+        <div className="flex flex-col my-[20px] space-y-4">
+            <h1 className='color-r text-3xl sm:text-5xl font-minecraftt'>{'Zhylandy FIRST Championship'}</h1>
+            <h2 className='text-w font-minecraftt text-2xl sm:text-3xl'>{'November 30, 2024'}</h2>
+            <div className='text-w font-minecraftt text-base sm:text-lg space-y-6'>
+                <span className='block'>
+                    Our team participated in the regional Zhylandy FIRST Championship and successfully presented outstanding social projects, contributions to robotics, and the values of FIRST®️.
+                </span>
+                <span className='block'>
+                    Thanks to our hard work and dedication, we were honored to win one of the top awards—Inspire Award 2nd Place. We are thrilled that our team is reaching new heights!
+                </span>
             </div>
+        </div>
+    </div>
+
+    <hr className='border-gray-800 border-t-2' />
+
+    <div className="flex flex-col sm:flex-row gap-6 my-[24px]">
+        {/* Image Container */}
+        <div className="sm:w-[40%] h-[350px] flex-shrink-0">
+            <img 
+                src={forum} 
+                className="w-full h-full object-cover" 
+                alt="Photo" 
+            />
+        </div>
+        
+        {/* Text Container */}
+        <div className="flex flex-col my-[20px] space-y-4">
+            <h1 className='color-r text-3xl sm:text-5xl font-minecraftt'>{'International Forum for FTC Students'}</h1>
+            <h2 className='text-w font-minecraftt text-2xl sm:text-3xl'>{'January 3-4, 2025'}</h2>
+            <div className='text-w font-minecraftt text-base sm:text-lg space-y-6'>
+                <span className='block'>
+                    Team RedStone is proud to announce the organization of the International Forum for FTC Students. This forum aims to unite students (both rookies and experienced), mentors, and professionals from around the globe to share invaluable insights, enhance their knowledge, and promote collaboration within the FTC community.
+                </span>
+                <span className='block'>
+                    We are honored to share that some of the world’s best teams and judges have graciously accepted our invitation to participate in this online forum. We are confident this event will be an incredible opportunity for growth and innovation within our community!
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
         </>
     );
 };

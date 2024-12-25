@@ -1,7 +1,16 @@
 import '/src/App.css';
 import rightPhoto from '/src/assets/right-photo.jpg';
 import zhanibek from '/src/assets/zhanibek.jpg';
-import nazima from '/src/assets/nazima.jpeg';
+import nazima from '/src/assets/nazima.jpg'
+import ansar from '/src/assets/ansar.jpg';
+import bekarys from '/src/assets/bekarys.jpg';
+import fatiha from '/src/assets/fatiha.jpg';
+import aruzhan from '/src/assets/aruzhan.jpg';
+import zhanel from '/src/assets/zhanel.jpg';
+import zere from '/src/assets/zere.jpg';
+import ernazar from '/src/assets/ernazar.jpg'
+import david from '/src/assets/david.jpg'
+import dariya from '/src/assets/dariya.png'
 
 const Member = ({ photo, name, role, school }) => {
     let bgClass;
@@ -48,13 +57,23 @@ export const Team = () => {
                         We are team 24749, <span className="color-r">RedStone</span>!
                     </p>
                     <p className="text-w text-lg md:text-2xl mt-6">
-                        We're a community team with members from <span className='color-r'>5 public schools</span> across Almaty based out of a laboratory in 81 school. We've been competing in FIRST Robotics for <span className='color-r'>2 years</span>. We currently have <span className='color-r'>11 members</span> and are excited to be a part of the FIRST community!
+                        We're a community team with members from <span className='color-r'>3 public schools</span> across Almaty based out of a laboratory in 81 school. We've been competing in FIRST Robotics for <span className='color-r'>2 years</span>. We currently have <span className='color-r'>11 members</span> and are excited to be a part of the FIRST community!
                     </p>
                 </div>
             </div>
 
             {/* Members Section */}
-            <div className="w-screen flex flex-wrap justify-center md:justify-between gap-6 px-4 md:px-[45px]">
+            <div className="w-screen flex flex-wrap justify-center md:justify-start gap-6 px-4 md:px-[45px]">
+
+                <div className="w-full sm:w-[48%] lg:w-[32%]">
+                    <Member
+                        photo={nazima}
+                        name="Nazima Sagi"
+                        role="Software Member"
+                        school="Gymnasium No.21"
+                    />
+                </div>
+
                 <div className="w-full sm:w-[48%] lg:w-[32%]">
                     <Member
                         photo={zhanibek}
@@ -63,68 +82,82 @@ export const Team = () => {
                         school="Gymnasium No.21"
                     />
                 </div>
+
                 <div className="w-full sm:w-[48%] lg:w-[32%]">
                     <Member
-                        photo={nazima}
-                        name="Nazima"
-                        role="Software Member"
-                        school="Gymnasium No.21"
-                    />
-                </div>
-                <div className="w-full sm:w-[48%] lg:w-[32%]">
-                    <Member
-                        photo={rightPhoto}
-                        name="John Doe"
-                        role="Team Lead"
-                        school="Some School"
-                    />
-                </div>
-                <div className="w-full sm:w-[48%] lg:w-[32%]">
-                    <Member
-                        photo={zhanibek}
-                        name="Jane Doe"
-                        role="Hardware Engineer"
-                        school="Another School"
-                    />
-                </div>
-                <div className="w-full sm:w-[48%] lg:w-[32%]">
-                    <Member
-                        photo={nazima}
-                        name="Nazima"
-                        role="Designer"
-                        school="Creative School"
-                    />
-                </div>
-                <div className="w-full sm:w-[48%] lg:w-[32%]">
-                    <Member
-                        photo={zhanibek}
-                        name="Nazima"
-                        role="Project Manager"
-                        school="Leadership Academy"
-                    />
-                </div>
-                <div className="w-full sm:w-[48%] lg:w-[32%]">
-                    <Member
-                        photo={rightPhoto}
-                        name="Nazima"
+                        photo={ansar}
+                        name="Ansar Sagatov"
                         role="Mechanical Member"
-                        school="Leadership Academy"
+                        school="Gymnasium No.81"
                     />
                 </div>
+                
                 <div className="w-full sm:w-[48%] lg:w-[32%]">
                     <Member
-                        photo={rightPhoto}
-                        name="Nazima"
+                        photo={ernazar}
+                        name="Ernazar Dzhanibekov"
+                        role="Mechanical Member"
+                        school="Gymnasium No.81"
+                    />
+                </div>
+
+                
+                <div className="w-full sm:w-[48%] lg:w-[32%]">
+                <Member
+                        photo={david}
+                        name="David Tolegenov"
+                        role="Mechanical Member"
+                        school="Gymnasium No.103"
+                    />
+                </div>
+
+                <div className="w-full sm:w-[48%] lg:w-[32%]">
+                <Member
+                        photo={bekarys}
+                        name="Bekarys Usen"
+                        role="Mechanical Member"
+                        school="Gymnasium No.81"
+                    />
+                </div>
+
+                <div className="w-full sm:w-[48%] lg:w-[32%]">
+                    <Member
+                        photo={zere}
+                        name="Zere Asylkhanova"
                         role="Inspire Member"
-                        school="Leadership Academy"
+                        school="Gymnasium No.123"
+                    />
+                </div>
+                <div className="w-full sm:w-[48%] lg:w-[32%]">
+                <Member
+                        photo={zhanel}
+                        name="Zhanel Dussembayeva"
+                        role="Inspire Member"
+                        school="Gymnasium No.103"
                     />
                 </div>
                 <div className="w-full sm:w-[48%] lg:w-[32%]">
                     <Member
-                        photo={rightPhoto}
-                        name="Nazima"
-                        role="Team Captain"
-                        school="Leadership Academy"
+                        photo={aruzhan}
+                        name="Aruzhan Satzhan"
+                        role="Inspire Member"
+                        school="College KazHAAC"
+                    />
+                </div>
+                <div className="w-full sm:w-[48%] lg:w-[32%]">
+                <Member
+                        photo={fatiha}
+                        name="Fatiha Izbassar"
+                        role="Inspire Member"
+                        school="Gymnasium No.81"
+                    />
+                </div>
+                <div className="w-full sm:w-[48%] lg:w-[32%]">
+                <Member
+                        photo={dariya}
+                        name="Dariya Essenbayeva"
+                        role="Inspire Member"
+                        school="Gymnasium No.81"
                     />
                 </div>
             </div>

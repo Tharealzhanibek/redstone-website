@@ -34,7 +34,6 @@ const LowBar = () => {
             <a href="https://www.instagram.com/redstone_ftckz/" target="_blank" rel="noopener noreferrer">
                 <img src={instagram} className="h-6" alt="Instagram" />
             </a>
-            <img src={gmail} className="h-6" alt="Gmail" />
         </div>
     );
 };

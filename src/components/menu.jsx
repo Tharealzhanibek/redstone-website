@@ -59,10 +59,12 @@ const Menu = () => {
                 <Link to="/Awards" className="hover:text-[#e57361] cursor-pointer">
                     Awards
                 </Link>
-                <Link to="/Contact" className="hover:text-[#e57361] cursor-pointer">
-                    Contact Us
-                </Link>
-            </nav>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVC09RilnJa7YHRpivNDVXFq-ng5XmpKpJ9lLJ4bgFoVbY-w/viewform?usp=header" target="_blank" rel="noopener noreferrer">
+                    <div className="hover:text-[#e57361] cursor-pointer">
+                        Contact Us
+                    </div>
+                </a>
+            </nav>  
         </header>
     );
 };
