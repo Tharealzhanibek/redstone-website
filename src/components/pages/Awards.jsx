@@ -34,23 +34,26 @@ export const Awards = () => {
                     title="INTO THE DEEP"
                     year="2024-2025"
                     details={[
-                        "Inspire Award 2nd place - Almaty Regional Championship",
-                        "Think Award 1st place - Almaty Regional Championship",
+                        "Inspire Award 2nd place - Regional Championship",
+                        "Think Award 1st place - Regional Championship",
                     ]}
                 />
                 <Award
                     title="FIRST Global Challenge"
                     year="2024"
                     details={[
-                        "Engineering Documentation Award 1st place - Almaty Regional Championship",
+                        "Al-Biruni Award for Engineering Documentation Winner - Regional Championship",
                     ]}
                 />
                 <Award
                     title="CENTERSTAGE"
                     year="2023-2024"
                     details={[
-                        "Motivate Award 3rd place - Central Asian Championship",
-                        "Winning Alliance Captain - Almaty Regional Championship",
+                        "Motivate Award 3rd place - National Championship",
+                        "Winning Alliance 1st pick - Regional Championship",
+                        "Connect Award Winner - Regional Championship",
+                        "Finalist Alliance 2nd pick - Regional Championship",
+                        "Motivate Award Winner - Regional Championship",
                     ]}
                 />
             </div>
