@@ -1,16 +1,16 @@
 import '/src/App.css';
 import rightPhoto from '/src/assets/right-photo.jpg';
 import zhanibek from '/src/assets/zhanibek.jpg';
-import nazima from '/src/assets/nazima.jpg'
+import nazima from '/src/assets/nazima.jpg';
 import ansar from '/src/assets/ansar.jpg';
 import bekarys from '/src/assets/bekarys.jpg';
 import fatiha from '/src/assets/fatiha.jpg';
 import aruzhan from '/src/assets/aruzhan.jpg';
 import zhanel from '/src/assets/zhanel.jpg';
 import zere from '/src/assets/zere.jpg';
-import ernazar from '/src/assets/ernazar.jpg'
-import david from '/src/assets/david.jpg'
-import dariya from '/src/assets/dariya.png'
+import ernazar from '/src/assets/ernazar.jpg';
+import david from '/src/assets/david.jpg';
+import dariya from '/src/assets/dariya.png';
 
 const Member = ({ photo, name, role, school }) => {
     let bgClass;
@@ -29,19 +29,17 @@ const Member = ({ photo, name, role, school }) => {
     }
 
     return (
-        <div className="flex flex-col md:flex-row w-full md:w-[440px] h-auto md:h-[200px] bg-[#1a1a1a] p-4 rounded-[20px] overflow-hidden">
+        <div className="flex flex-row w-full md:w-[440px] h-[200px] bg-[#1a1a1a] p-4 rounded-[20px] overflow-hidden">
             {/* Image Section */}
-            <div className="w-full md:w-[30%] h-[200px] md:h-full overflow-hidden">
+            <div className="flex-shrink-0 w-[30%] h-full overflow-hidden">
                 <img src={photo} className="w-full h-full object-cover rounded-[10px]" alt="Photo" />
             </div>
 
             {/* Text Section */}
-            <div className="flex flex-col justify-center w-full md:w-[70%] pl-0 md:pl-4 space-y-2 mt-4 md:mt-0">
-                <div className="color-r text-[24px] sm:text-[32px] font-minecraftt">{name}</div>
-                <div className="text-w font-minecraftt text-[20px] sm:text-[24px]">{school}</div>
-                <div className={`text-w font-minecraftt text-[20px] sm:text-[24px] p-2 md:p-4 rounded ${bgClass} flex justify-center items-center`}>
-                    {role}
-                </div>
+            <div className="flex flex-col justify-center w-[70%] pl-4 space-y-2">
+                <div className="color-r text-[24px] sm:text-[32px] font-minecraftt text-left">{name}</div>
+                <div className="text-w font-minecraftt text-[20px] sm:text-[24px] text-left">{school}</div>
+                <div className={`text-w font-minecraftt text-[20px] sm:text-[24px] p-2 rounded ${bgClass} text-center`}>{role}</div>
             </div>
         </div>
     );
@@ -64,7 +62,6 @@ export const Team = () => {
 
             {/* Members Section */}
             <div className="w-screen flex flex-wrap justify-center md:justify-start gap-6 px-4 md:px-[45px]">
-
                 <div className="w-full sm:w-[48%] lg:w-[32%]">
                     <Member
                         photo={nazima}
@@ -101,9 +98,8 @@ export const Team = () => {
                     />
                 </div>
 
-                
                 <div className="w-full sm:w-[48%] lg:w-[32%]">
-                <Member
+                    <Member
                         photo={david}
                         name="David Tolegenov"
                         role="Mechanical Member"
@@ -112,7 +108,7 @@ export const Team = () => {
                 </div>
 
                 <div className="w-full sm:w-[48%] lg:w-[32%]">
-                <Member
+                    <Member
                         photo={bekarys}
                         name="Bekarys Usen"
                         role="Mechanical Member"
@@ -129,7 +125,7 @@ export const Team = () => {
                     />
                 </div>
                 <div className="w-full sm:w-[48%] lg:w-[32%]">
-                <Member
+                    <Member
                         photo={zhanel}
                         name="Zhanel Dussembayeva"
                         role="Inspire Member"
@@ -145,7 +141,7 @@ export const Team = () => {
                     />
                 </div>
                 <div className="w-full sm:w-[48%] lg:w-[32%]">
-                <Member
+                    <Member
                         photo={fatiha}
                         name="Fatiha Izbassar"
                         role="Inspire Member"
@@ -153,7 +149,7 @@ export const Team = () => {
                     />
                 </div>
                 <div className="w-full sm:w-[48%] lg:w-[32%]">
-                <Member
+                    <Member
                         photo={dariya}
                         name="Dariya Essenbayeva"
                         role="Inspire Member"

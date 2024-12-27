@@ -93,7 +93,7 @@ export const Home = () => {
                 <div className='space-y-6 font-minecraftt text-base sm:text-lg text-center sm:text-left'>
                     <div>Your tax deductible sponsorship would help us fund our registration & team fees, robot parts, and community outreach events! </div>
                     <div>As a thank you, we would love to include your logo on our pit displays, portfolio, robot cart, and engineering portfolios which will be seen by hundreds of other teams, spectators, and volunteers from around the world.</div>
-                    <div>If you are interested in sponsoring us or have any questions, please reach out to us at be-a-sponsor@thecluelessftc.org!</div>
+                    <div>If you are interested in sponsoring us or have any questions, please reach out to us at redstonefirstkz@gmail.com!</div>
                 </div>
             </div>
 
