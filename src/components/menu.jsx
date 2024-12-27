@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from './Logo.png';
+import redstoneName from '/src/assets/redstone-name.png';
 import '/src/App.css';
 
 const Menu = () => {
@@ -24,7 +25,7 @@ const Menu = () => {
         >
             {/* Logo Section */}
             <div className="flex items-center">
-                <img src={Logo} alt="Logo" className="h-10 cursor-pointer" />
+                <img src={redstoneName} alt="Logo" className="h-5 cursor-pointer" />
             </div>
 
             {/* Toggle Button for Mobile */}
@@ -39,32 +40,45 @@ const Menu = () => {
 
             {/* Navbar Links */}
             <nav
-                className={`flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 text-[#F5F5F5] font-minecraft ${
+                className={`${
                     isMobile
-                        ? isNavbarVisible
-                            ? 'flex'
-                            : 'hidden'
-                        : 'flex'
+                        ? `transition-transform duration-300 ease-in-out transform fixed top-0 right-0 h-full bg-[#1a1a1a] shadow-lg z-40 ${isNavbarVisible ? 'translate-x-0 w-[20%]' : 'translate-x-full w-[20%]'} font-minecraft`
+                        : 'flex space-x-6 text-[#F5F5F5] font-minecraft'
                 }`}
             >
-                <Link to="/Home" className="hover:text-[#e57361] cursor-pointer">
-                    Home
-                </Link>
-                <Link to="/Team" className="hover:text-[#e57361] cursor-pointer">
-                    Team
-                </Link>
-                <Link to="/Events" className="hover:text-[#e57361] cursor-pointer">
-                    Events
-                </Link>
-                <Link to="/Awards" className="hover:text-[#e57361] cursor-pointer">
-                    Awards
-                </Link>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVC09RilnJa7YHRpivNDVXFq-ng5XmpKpJ9lLJ4bgFoVbY-w/viewform?usp=header" target="_blank" rel="noopener noreferrer">
-                    <div className="hover:text-[#e57361] cursor-pointer">
-                        Contact Us
-                    </div>
-                </a>
-            </nav>  
+                {isMobile && (
+                    <button
+                        onClick={() => setIsNavbarVisible(false)}
+                        className="text-white color-r p-2 rounded-md m-4"
+                    >
+                        Close
+                    </button>
+                )}
+                <ul className="text-white p-4 space-y-4 sm:space-y-0 sm:space-x-6 sm:flex">
+                    <li>
+                        <Link to="/Home" className="hover:text-[#e57361] cursor-pointer">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/Team" className="hover:text-[#e57361] cursor-pointer">Team</Link>
+                    </li>
+                    <li>
+                        <Link to="/Events" className="hover:text-[#e57361] cursor-pointer">Events</Link>
+                    </li>
+                    <li>
+                        <Link to="/Awards" className="hover:text-[#e57361] cursor-pointer">Awards</Link>
+                    </li>
+                    <li>
+                        <a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSeVC09RilnJa7YHRpivNDVXFq-ng5XmpKpJ9lLJ4bgFoVbY-w/viewform?usp=header"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:text-[#e57361] cursor-pointer"
+                        >
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </header>
     );
 };
