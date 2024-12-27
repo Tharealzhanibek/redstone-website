@@ -24,7 +24,7 @@ export const Home = () => {
                                     <span className='color-r'>RedStone 24749</span> is a robotics team competing in the FIRST®️ Tech Challenge. We proudly represent the American Corner MakerSpace in Almaty, Kazakhstan.
                                 </span>
                                 <span className='block'>
-                                    The team was founded on <span className='color-r'>October 3, 2023</span>, by young robotics enthusiasts from School No. 81. Today, the team consists of <span className='color-r'>11 members</span> from <span className='color-r'>6 public schools</span>.
+                                    The team was founded on <span className='color-r'>October 3, 2023</span>, by young robotics enthusiasts from School No. 81. Today, the team consists of <span className='color-r'>11 members</span> from <span className='color-r'>7 public schools</span>.
                                 </span>
                                 <span className='block'>
                                     At the core, we love FIRST Tech Challenge and look forward to every robotics meeting. <span className='color-r'>Our passion drives our success</span>!

@@ -55,7 +55,7 @@ export const Team = () => {
                         We are team 24749, <span className="color-r">RedStone</span>!
                     </p>
                     <p className="text-w text-lg md:text-2xl mt-6">
-                        We're a community team with members from <span className='color-r'>6 public schools</span> across Almaty based out of a laboratory in 81 school. We've been competing in FIRST Robotics for <span className='color-r'>2 years</span>. We currently have <span className='color-r'>11 members</span> and are excited to be a part of the FIRST community!
+                        We're a community team with members from <span className='color-r'>7 public schools</span> across Almaty based out of a laboratory in 81 school. We've been competing in FIRST Robotics for <span className='color-r'>2 years</span>. We currently have <span className='color-r'>11 members</span> and are excited to be a part of the FIRST community!
                     </p>
                 </div>
             </div>
@@ -66,7 +66,7 @@ export const Team = () => {
                     <Member
                         photo={nazima}
                         name="Nazima Sagi"
-                        role="Software Member"
+                        role="Team Captain"
                         school="Gymnasium No.81"
                     />
                 </div>
@@ -103,7 +103,7 @@ export const Team = () => {
                         photo={david}
                         name="David Tolegenov"
                         role="Mechanical Member"
-                        school="Gymnasium No.103"
+                        school="Gymnasium No.121"
                     />
                 </div>
 
