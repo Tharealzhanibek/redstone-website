@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from './Logo.png';
-import redstoneName from '/src/assets/redstone-name.png';
+import redstoneLogo from '/src/assets/redstone-name.png'
 import '/src/App.css';
 
 const Menu = () => {
@@ -25,7 +25,7 @@ const Menu = () => {
         >
             {/* Logo Section */}
             <div className="flex items-center">
-                <img src={redstoneName} alt="Logo" className="h-5 cursor-pointer" />
+                <img src={redstoneLogo} alt="Logo" className="h-6 cursor-pointer" />
             </div>
 
             {/* Toggle Button for Mobile */}
@@ -42,7 +42,7 @@ const Menu = () => {
             <nav
                 className={`${
                     isMobile
-                        ? `transition-transform duration-300 ease-in-out transform fixed top-0 right-0 h-full bg-[#1a1a1a] shadow-lg z-40 ${isNavbarVisible ? 'translate-x-0 w-[20%]' : 'translate-x-full w-[20%]'} font-minecraft`
+                        ? `transition-transform duration-300 ease-in-out transform fixed top-0 right-0 h-full bg-[#1a1a1a] shadow-lg z-40 ${isNavbarVisible ? 'translate-x-0 w-[40%]' : 'translate-x-full w-[40%]'} font-minecraft`
                         : 'flex space-x-6 text-[#F5F5F5] font-minecraft'
                 }`}
             >
