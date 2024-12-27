@@ -21,7 +21,7 @@ export const Home = () => {
                             <h1 className='font-minecraftt text-4xl sm:text-5xl mt-4 mb-10 color-r'>Who We Are:</h1>
                             <div className='text-lg sm:text-xl font-minecraftt space-y-6'>
                                 <span className='block'>
-                                    <span className='color-r'>RedStone 24749</span> is a robotics team competing in the FIRST®️ Tech Challenge. We proudly represent the American Corner MakerSpace in Almaty, Kazakhstan.
+                                    <span className='color-r'>RedStone 24749</span> is a robotics team competing in the FIRST®️ Tech Challenge. We proudly represent the American Corner MakerSpace and School No. 81 in Almaty, Kazakhstan.
                                 </span>
                                 <span className='block'>
                                     The team was founded on <span className='color-r'>October 3, 2023</span>, by young robotics enthusiasts from School No. 81. Today, the team consists of <span className='color-r'>11 members</span> from <span className='color-r'>7 public schools</span>.
