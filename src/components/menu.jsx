@@ -24,9 +24,9 @@ const Menu = () => {
             className={`flex items-center justify-between bgc-bl px-6 py-4 shadow-md sticky top-0 z-50`}
         >
             {/* Logo Section */}
-            <div className="flex items-center">
-                <img src={redstoneLogo} alt="Logo" className="h-6 cursor-pointer" />
-            </div>
+            <Link to="/Home" className="hover:text-[#e57361] cursor-pointer">
+                <img src={redstoneLogo} className='h-6'></img>
+            </Link>
 
             {/* Toggle Button for Mobile */}
             {isMobile && (
